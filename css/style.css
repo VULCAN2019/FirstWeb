@@ -237,7 +237,6 @@ a{
                  15px -15px 5px orange;
     margin: 10px auto;
     text-align: center;
-
     display: block;
 }
 
@@ -249,14 +248,78 @@ a{
     margin:20px auto;
 }
 
+.abc{
+    width:40%;
+    background: -webkit-linear-gradient(left top, rgba(250,12,233,0.5), blue, yellow, hotpink);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    margin:0 auto;
+    background-size:10% 100%;
+    text-align: center;font-size:30px;
+    animation: masked-animation 4s infinite linear;
+}
 
+@keyframes masked-animation {
+    0% {
+        background-position: 0 0;
+    }
+    100%{
+        background-position: 100% 0;
+    }
+}
 
+.mytest{
+    height:200px;
+    line-height:200px;
+}
 
+.radial{
+    width:200px;
+    height:200px;
+    margin:0 auto;
+    /*径向渐变*/
+    background:-webkit-radial-gradient(yellow,blue,green,white,red);
+}
 
+.box1{
+    width:500px;
+    height:500px;
+    text-align: center;
+    background-color:red;
+    margin:100px auto;
+}
+.box2{
+    width:300px;
+    height:300px;
+    display: inline-block;
+    background-color:greenyellow;
+    margin-top:100px;
+}
+.box3{
+    width:100px;
+    height:100px;
+    background-color:yellow;
+    line-height: 100px;
+    display: inline-block;
+    margin:25px;
+    float:left;
+}
+.box4{
+    width:100px;
+    height:100px;
+    background-color:blue;
+    line-height: 100px;
+    display: inline-block;
+    margin:50px 25px 25px 25px;
+    float:left;
 
+}
 
+.box5{
+    width:100px;
+    height:100px;
+    background-color:yellow;
+    line-height: 100px;
+    display: inline-block;
 
-
-
-
-
+}

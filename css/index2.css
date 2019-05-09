@@ -3,12 +3,18 @@
     padding: 0px;
 }
 
+body{
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
 #header {
+    z-index: 99;
     width: 100%;
     height: 82px;
     border-bottom: 2px solid deepskyblue;
     position: fixed;
-    background: rgba(255,255,255,0.8);
+    background: rgba(255,255,255,0.9);
 }
 
 .logo{
@@ -339,22 +345,179 @@
 
 #content4{
     width: 100%;
-    height: 610px;
+    height: 560px;
     background: rgb(245, 245, 245);
+    text-align: center;
+    overflow: hidden;
 }
 
+.chat{
+    width: 300px;
+    height: 300px;
+    float: left;
+    padding: 30px 0px;
+    margin-top: 80px;
+    position: relative;
+}
 
+.chat h3{
+    position: absolute;
+    top: 5px;
+    left: 105px;
+}
+
+.chat h4{
+    position: absolute;
+    top: 171px;
+    left: 106px;
+}
+
+.chat h4 img{
+
+}
+
+.chat > h3 img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.chat > div{
+    width: 80%;
+    height: 110px;
+    border-radius: 5px;
+    border: 1px solid rgb(52, 162, 99);
+    padding: 30px 8px 0 8px;
+    font-size: 13px;
+    text-align: left;
+}
+
+.chat-img{
+    border: none !important;
+}
+
+.chat-img img{
+    width: 75px;
+    height: 75px;
+    display: block;
+    margin: 0 auto;
+}
+
+.chat-s1{
+    background: rgb(170, 170, 170);
+    color: rgb(233, 233, 233);
+    margin-top: 13px;
+    display: inline-block;
+}
+
+.chat-s1 + img{
+    margin-left: 90px;
+}
+
+.chat-s2{
+    color: rgb(170, 170, 170);
+    float: right;
+    margin-top: 13px;
+    display: inline-block;
+}
+
+#content5{
+    width: 100%;
+    height: 615px;
+    background: rgb(255, 255, 255);
+}
+
+.content5-bottom{
+    width: 82%;
+    height: 300px;
+    margin: 100px auto 0 auto;
+}
+
+.content5-bottom > div{
+    width: 47%;
+    height: 150px;
+    float: left;
+    margin: 0px 10px;
+}
+
+.content5-bottom-right{
+    width: 68%;
+    float: left;
+    margin-left: 15px;
+}
+
+.content5-bottom-right h4{
+    color: rgb(89, 195, 243);
+    font-size: 16px;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    margin-bottom: 15px;
+    margin-top: 2px;
+}
+
+.content5-bottom-right h4:hover{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.content5-bottom-right div{
+    color: rgb(145, 145, 145);
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+
+.content5-bottom-right span{
+    color: rgb(145, 145, 145);
+    font-size: 12px;
+}
+
+.content5-bottom-left{
+    float: left;
+    text-align: center;
+    width: 28%;
+}
+
+.content5-bottom img{
+    width: 130px;
+    height: 90px;
+    padding: 2px 2px;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 2px;
+}
+
+#content5 > h2{
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 200;
+}
+
+#content5 > h2 a{
+    width: 150px;
+    height: 50px;
+    display: block;
+    color: rgb(89, 195, 243);
+    text-decoration: none;
+    margin: 0 auto;
+}
+
+#content5 > a:hover{
+    text-decoration: underline;
+}
 
 #footer{
     width: 100%;
-    height: 1125px;
+    height: 1060px;
 }
 
 .footer-1{
     width: 100%;
     height: 450px;
     background: rgb(225, 225, 225);
-
 }
 
 .footer-1-bottom{
@@ -373,7 +536,7 @@
 
 .footer-1-bottom img{
     border: 1px solid rgb(193, 193, 193);
-    width: 120px;
+    width: 115px;
     height: 60px;
     margin: 17px 10px;
     transition:all 0.4s;
@@ -381,7 +544,7 @@
 
 .footer-1-bottom img:hover{
     background: rgb(250, 250, 250);
-    box-shadow: 0 0 5px rgb(11, 161 , 228);
+    box-shadow: 0 0 8px rgb(11, 161 , 228);
 }
 
 .img1:hover{
@@ -430,4 +593,173 @@
 
 .img12:hover{
     content: url("../img/client12-2.png");
+}
+
+.footer-2{
+    width: 100%;
+    height: 250px;
+    background: linear-gradient(rgb(1, 119, 209), rgb(93, 184, 255)); /* 标准的语法（必须放在最后） */
+}
+
+.footer-2 > div{
+    width: 40%;
+    height: 250px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    color: rgb(233, 239, 243);
+}
+
+.footer-2 h1{
+    width: 340px;
+    height: 50px;
+    font-weight: 200;
+    border-bottom: 2px solid rgb(233, 239, 243);
+    padding-top: 40px;
+    margin: 0 auto;
+}
+
+.footer-2 h4{
+    font-weight: 100;
+    width: 340px;
+    padding: 10px 0px;
+    margin: 0 auto;
+}
+
+.footer-2 a{
+    display: block;
+    width: 145px;
+    height: 50px;
+    color: rgb(233, 239, 243);
+    border: 1px solid rgb(233, 239, 243);
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 22px;
+    text-align: center;
+    line-height: 50px;
+    margin: 20px auto;
+    transition: all 0.225s;
+}
+
+.footer-2 a:hover{
+    background: rgb(233, 239, 243);
+    color: rgb(11, 161 , 228);
+}
+
+.footer-3{
+    width: 100%;
+    height: 240px;
+    background: rgb(54, 54, 54);
+    overflow: hidden;
+}
+
+.footer-3 > div{
+    width: 80%;
+    height: 240px;
+    margin: 0 auto;
+    color: rgb(233, 239, 243);
+}
+
+.footer-3-list{
+    width: 13%;
+    height: 160px;
+    margin-top: 40px;
+    margin-left: 25px;
+    float: left;
+    border-left:2px solid rgb(233, 239, 243);
+}
+
+.footer-3-list h4{
+    font-weight: 200;
+    padding: 5px 15px 15px 15px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.footer-3-list li{
+    list-style: none;
+    padding: 8px 15px;
+    font-size: 14px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.footer-3-list li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.two-code p{
+    width: 150px;
+    height: 20px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 30px;
+    display: block;
+}
+
+.two-code img{
+    width: 130px;
+    height: 130px;
+    margin: 0 10px;
+    white-space: nowrap;
+}
+
+.footer-3-number{
+    width: 30% !important;
+    border-right: 2px solid rgb(233, 239, 243);
+    height: 160px;
+    margin-top: 40px;
+    padding-left: 25px;
+    float: left;
+}
+
+.footer-3-number > div{
+    border-left:2px solid rgb(233, 239, 243);
+    height: 160px;
+    width: 100%;
+    display: inline-block;
+}
+
+.footer-3-number-img{
+    width: 90%;
+    height: 45px;
+    font-weight: 100;
+    font-size: 24px;
+    line-height: 35px;
+    margin: 8px 0 0 20px;
+}
+
+.footer-3-number-img a{
+    width: 100%;
+    height: 45px;
+    line-height: 20px;
+    vertical-align: super;
+}
+
+.footer-3-number-img img{
+    width: 35px;
+    height: 35px;
+}
+
+.footer-4{
+    background: rgb(102, 102, 102);
+    width: 100%;
+    height: 125px;
+    color: rgb(233, 239, 243);
+}
+
+.footer-4 div{
+    width: 60%;
+    height: 20px;
+    font-size: 12px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    white-space: nowrap;
+}
+
+.footer-4 a{
+    vertical-align: super;
+    line-height: 20px;
 }
