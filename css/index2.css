@@ -8,6 +8,11 @@ body{
     overflow-x: hidden;
 }
 
+a{
+    color:rgb(145,145,145);
+    text-decoration: none;
+}
+
 #header {
     z-index: 99;
     width: 100%;
@@ -763,3 +768,158 @@ body{
     vertical-align: super;
     line-height: 20px;
 }
+
+
+.details:hover{
+    color:deepskyblue;
+}
+
+.fa-headphones{
+    position: fixed;
+    z-index: 9;
+    right:5px;
+    top:400px;
+    color:deepskyblue;
+    padding:5px;
+    border:1px solid deepskyblue;
+    text-align: center;
+    display: block;
+}
+.headphone{
+    height:42px;
+    width:100px;
+    background: deepskyblue;
+    position: relative;
+    right:105px;
+    top: -36px;
+    display: none;
+    font-size:16px;
+    line-height: 42px;
+}
+.fa-headphones:hover{
+    background-color:deepskyblue;
+    color:white;
+}
+.fa-headphones:hover>.headphone{
+    display:block;
+}
+
+
+
+.fa-qq{
+    position: fixed;
+    z-index: 9;
+    right:5px;
+    top:450px;
+    font-size: 30px;
+    color:deepskyblue;
+    padding:5px;
+    border:1px solid deepskyblue;
+    text-align: center;
+}
+.qq{
+    height:42px;
+    width:100px;
+    background: deepskyblue;
+    position: relative;
+    right:105px;
+    top: -36px;
+    display: none;
+    font-size:16px;
+    line-height: 42px;
+}
+.fa-qq:hover{
+    background-color:deepskyblue;
+    color:white;
+}
+.fa-qq:hover>.qq{
+    display:block;
+}
+
+.fa-volume-control-phone{
+    position: fixed;
+    z-index: 9;
+    right:5px;
+    top:500px;
+    font-size: 30px;
+    /*transform:rotate(-45deg);*/
+    color:deepskyblue;
+    padding:5px;
+    border:1px solid deepskyblue;
+    text-align: center;
+}
+
+.phone{
+    height:42px;
+    width:100px;
+    background: deepskyblue;
+    position: relative;
+    right:105px;
+    top: -36px;
+    display: none;
+    font-size:14px;
+    line-height: 42px;
+}
+.fa-volume-control-phone:hover{
+    background-color:deepskyblue;
+    color:white;
+}
+.fa-volume-control-phone:hover>.phone{
+    display:block;
+}
+
+
+
+.fa-weixin{
+    position: fixed;
+    z-index: 9;
+    right:5px;
+    top:550px;
+    font-size: 27px;
+    color:deepskyblue;
+    padding:5px;
+    border:1px solid deepskyblue;
+    text-align: center;
+}
+.weichat{
+    height:42px;
+    width:100px;
+    background: deepskyblue;
+    position: relative;
+    right:105px;
+    top: -36px;
+    display: none;
+    font-size:16px;
+    line-height: 42px;
+}
+.fa-weixin:hover{
+    background-color:deepskyblue;
+    color:white;
+}
+.fa-weixin:hover>.weichat{
+    display:block;
+}
+.weichat img{
+    width:150px;
+    height:150px;
+    position: absolute;
+    left:-50px;
+    top:-108px;
+}
+
+
+
+.fa-arrow-up{
+    position: fixed;
+    z-index: 9;
+    right:5px;
+    top:600px;
+    font-size: 30px;
+    color:deepskyblue;
+    padding:5px;
+    border:1px solid deepskyblue;
+    text-align: center;
+}
+
+
+
